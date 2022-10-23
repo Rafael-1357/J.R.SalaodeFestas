@@ -12,8 +12,12 @@
   <!-- Css Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
+  
   <!-- CSS Desktop -->
   <link rel="stylesheet" href="./desktop.css">
+
+  <!-- Css Mobile -->
+  <link rel="stylesheet" href="./mobile.css">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,6 +25,17 @@
 </head>
 
 <body>
+
+  <header>
+    <div id="header--container">
+      <div id="logo"><img src="./img/Logo.png" alt="Logo J.R Salão de Festas"></div>
+      <div id="menu">
+        <button class="menu--itens">Solicitar orçamento</button>
+        <a href="#galery--link" class="menu--itens">Galeria</a>
+        <a href="#map--link" class="menu--itens">Localização</a>
+      </div>
+    </div>
+  </header>
   
   <main id="container">
 
@@ -28,11 +43,11 @@
       <div class="sections--content">
         <div id="text--convertion">
           <h1>Entre em contato conosco e agende seu evento!</h1>
-          <a href="https://wa.me/5522998772624" target="_blank"><button>Whatsapp <i class="fa-brands fa-whatsapp"></i></button></a>
+          <a href="https://wa.me/5522998072624" target="_blank"><button>Whatsapp <i class="fa-brands fa-whatsapp"></i></button></a>
         </div>
       </div>
     </div>
-    <div class="sections">
+    <div id="galery--link" class="sections">
       <div class="sections--content">
         <div id="galery--text">
           <h1>Veja algumas imagens dos eventos realizados no nosso espaço</h1>
@@ -68,7 +83,7 @@
         </div>
       </div>
     </div>
-    <div class="sections">
+    <div id="map--link" class="sections">
       <div class="sections--content">
         <div id="maps">
           <iframe
@@ -76,19 +91,27 @@
             width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7410.026561885553!2d-41.322022!3d-21.779747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdd42b40a7cb39%3A0xb98ff0164023f36b!2sJ.%20R.%20Espa%C3%A7o%20de%20Festas!5e0!3m2!1spt-BR!2sbr!4v1666553804354!5m2!1spt-BR!2sbr"
+            width="280" height="240" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
           <a href="https://www.google.com/maps/place/J.+R.+Espaço+de+Festas/@-21.7797467,-41.3242106,17z/data=!3m1!4b1!4m5!3m4!1s0xbdd42b40a7cb39:0xb98ff0164023f36b!8m2!3d-21.7797469!4d-41.3219994">
             <a href="https://goo.gl/maps/Dg7zfQPQcisJQqCL8" target="_blank"><button>Ver rotas</button></a>
           </a>
         </div>
         <div id="text--convertion--maps">
           <h1>Nós encontre no mapa e realize o agendamento da sua festa!</h1>
-          <a href="https://wa.me/5522998772624" target="_blank"><button>Whatsapp <i class="fa-brands fa-whatsapp"></i></button></a>
+          <a href="https://wa.me/5522998072624" target="_blank"><button>Whatsapp <i class="fa-brands fa-whatsapp"></i></button></a>
         </div>
       </div>
       
     </div>
 
   </main>
+
+  <div id="backtotop">
+    <a href="#header--container"><button><i class="fa-solid fa-arrow-up-long"></i></button></a>
+  </div>
 
   <!-- Script Swiper -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
