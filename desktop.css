@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+:root{
+  --dourado: #e09e47;
+}
+
+#container{
+  width: 100%;
+  height: 100vh;
+}
+
+.sections{
+  width: 100%;
+  height: auto;
+
+  margin: 0 auto;
+}
+
+.sections:nth-child(1){
+  background-color: var(--dourado);
+  background-image: url(./img/principal.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.sections:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sections:nth-child(3) {
+  background-color: var(--dourado);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sections--content{
+  max-width: 900px;
+  height: auto;
+
+  margin: 0 auto;
+
+  display: flex;
+}
+
+
+.sections:nth-child(2) .sections--content{
+  flex-direction: column;
+}
+
+#text--convertion{
+  width: 50%;
+
+  margin: 150px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#text--convertion h1{
+  width: 15ch;
+  color: white;
+  font-size: 52px;
+  line-height: 45px;
+
+  
+}
+
+#text--convertion a{
+  width: 210px;
+  height: 60px;
+
+  text-decoration: none;
+
+  margin-top: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#text--convertion a button {
+  width: 200px;
+  height: 50px;
+
+  color: var(--dourado);
+  font-size: 18px;
+  text-decoration: none;
+
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 10px var(--dourado);
+  cursor: pointer;
+}
+
+#galery--text{
+  display: flex;
+  justify-content: center;
+}
+
+#galery--text h1{
+  width: 30ch;
+  
+  color: var(--dourado);
+  font-size: 48px;
+  line-height: 55px;
+  text-align: center;
+  
+  margin: 45px 0;
+}
+
+#galery--images{
+  margin-bottom: 50px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction{
+  bottom: 0px;
+}
+
+.swiper{
+  height: 360px;
+}
+
+.swiper--galery-imgs{
+  width: 100%;
+  height: 95%;
+}
+
+
+
+#maps{
+  width: 450px;
+  height: 100%;
+
+  margin: 60px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#maps iframe{
+  border: 5px solid #fff !important;
+}
+
+#maps button{
+  width: 200px;
+  height: 50px;
+
+  color: var(--dourado);
+  font-size: 18px;
+
+  margin-top: 25px;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#text--convertion--maps{
+  width: 450px;
+
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#text--convertion--maps a button{
+  width: 200px;
+  height: 50px;
+
+  color: var(--dourado);
+  font-size: 18px;
+  text-decoration: none;
+
+  margin-top: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 10px var(--dourado);
+  cursor: pointer;
+}
+
+
+
+
