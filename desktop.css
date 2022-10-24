@@ -50,6 +50,10 @@
     display: flex;
   }
 
+  #button--menu{
+    display: none;
+  }
+
   .menu--itens{
     height: 60px;
 

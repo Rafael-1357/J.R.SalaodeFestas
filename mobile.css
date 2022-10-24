@@ -9,6 +9,9 @@
   header{
     width: 100%;
     height: 60px;
+
+    position: relative;
+
     background: #0f0f0f;
     
     z-index: 2;
@@ -47,10 +50,40 @@
   }
 
   #header--container #menu{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+
+    border-bottom: 1px solid var(--dourado);
+    background-color: #0f0f0f;
+    overflow-y: hidden;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #button--menu{
+    background-color: #0f0f0f;
     display: flex;
   }
 
+  #button--menu i{
+    height: 60px;
+
+    color: var(--dourado);
+    font-size: 24px;
+
+    margin: 0 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .menu--itens{
+    width: 50%;
     height: 60px;
 
     color: var(--dourado);
@@ -59,11 +92,17 @@
     text-transform: uppercase;
 
     margin: 0 15px;
+    border-bottom: 1px solid var(--dourado);
     background-color: #0f0f0f;
     cursor: pointer;
 
     display: flex;
+    justify-content: center;
     align-items: center;
+  }
+
+  .menu--itens:nth-child(3){
+    border-bottom: 0px;
   }
 
   #container{
@@ -156,15 +195,14 @@
   }
 
   #galery--images{
-    width: 100%;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
   }
 
-  .swiper{
-    height: 280px;
-  }
-
-  .swiper--galery-imgs {
+  .swiper, .swiper-slide, .swiper--galery-imgs, .swiper-wrapper{
     width: 100%;
+    height: auto;
   }
 
   #maps{
@@ -178,7 +216,9 @@
   }
 
   #maps iframe:nth-child(1){
-    display: none;
+    min-width: 350px;
+    width: 60%;
+    display: flex;
   }
 
   #maps button{
@@ -208,6 +248,7 @@
   }
 
   #text--convertion--maps h1{
+    max-width: 30ch;
     padding-bottom: 25px;
   }
 
@@ -228,6 +269,7 @@
     position:fixed;
     right: 10px;
     bottom: 10px;
+    z-index: 9999;
   }
 
   #backtotop button{
@@ -237,6 +279,7 @@
     border-radius: 100%;
     background-color: #0f0f0f;
     cursor: pointer;
+
   }
 
   #backtotop button i{
