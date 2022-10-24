@@ -7,6 +7,18 @@ if(largura < 900){
 }
 
 
+function setSources() {
+
+  const imagesGalery = document.querySelectorAll('.swiper--galery-imgs');
+
+  for (var i = 0; i < imagesGalery.length; i++) {
+    imagesGalery[i].src = `./img/JSFestas/${i + 1}.webp`;
+  }
+}
+
+setSources();
+
+
 const swiper = new Swiper('.swiper', {
   autoHeight: true,
   slidesPerView: slideQuant,
@@ -19,14 +31,3 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
-
-function setSources(){
-
-  const imagesGalery = document.querySelectorAll('.swiper--galery-imgs');
-
-  for(var i = 0; i < imagesGalery.length; i++){
-    imagesGalery[i].src = `./img/JSFestas/${i + 1}.webp`;
-  }
-}
-
-setSources();
